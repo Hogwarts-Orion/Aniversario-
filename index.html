@@ -300,10 +300,10 @@
             const progress = (count / 100) * 100;
             const bar = document.getElementById('energy-fill');
             bar.style.width = Math.min(progress, 100) + "%";
-            document.getElementById('energy-count').innerText = `${count} / 200 Firmas de Poder`;
+            document.getElementById('energy-count').innerText = `${count} / 100 Firmas de Poder`;
 
             // ACTIVACIÓN DE ÉXTASIS ASTRAL
-            if(count >= 200 && !goalReached) {
+            if(count >= 100 && !goalReached) {
                 goalReached = true;
                 bar.classList.add('full-energy');
                 document.getElementById('energy-header').innerText = "¡ESTADO DE SUPERNOVA!";
